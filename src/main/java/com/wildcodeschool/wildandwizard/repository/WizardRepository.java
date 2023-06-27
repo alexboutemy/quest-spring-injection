@@ -1,19 +1,20 @@
 package com.wildcodeschool.wildandwizard.repository;
 
-import com.wildcodeschool.wildandwizard.entity.Wizard;
-
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+import com.wildcodeschool.wildandwizard.entity.Wizard;
+
+@Repository
 public class WizardRepository implements WizardDao {
 
     private static List<Wizard> wizards = new ArrayList<>(
             Arrays.asList(
-                    new Wizard(1L, "Harry", "Potter", new Date(80, 6, 31), "London", "", false)
-            )
-    );
+                    new Wizard(1L, "Harry", "Potter", new Date(80, 6, 31), "London", "", false)));
 
     @Override
     public Wizard save(Wizard wizard) {

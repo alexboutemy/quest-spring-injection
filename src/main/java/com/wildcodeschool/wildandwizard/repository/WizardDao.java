@@ -1,8 +1,8 @@
 package com.wildcodeschool.wildandwizard.repository;
 
-import com.wildcodeschool.wildandwizard.entity.Wizard;
-
 import java.util.List;
+
+import com.wildcodeschool.wildandwizard.entity.Wizard;
 
 public interface WizardDao {
 
